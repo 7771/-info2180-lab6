@@ -1,26 +1,27 @@
 <!DOCTYPE>
 <html>
+    
     <head>
         <script src="javas.js" type="text/javascript"></scrpit>
-    <h1 style="color:red; background-color:black">
+        <h1 style="color:purple; background-color:blue">
         Web Dictionary    
-    </h1>
-    <p>
-    <div>
-            <form action="/request.php">
+        </h1>
+    </head>
+    <div height:1000px; position:relative; bottom:10px;">
+        <p>
+            <form action="/request.php" method="getXmlBtn">
                 Define the word:
                 <br>
-                <input type="text" value"type a word to search for here">
-                <br>
-                <input type="search">
+                <input type="search" id="mySearch">
                 <br>
                 <button onclick="request.php">Search</button>
             </form>
-  <div>
-      <h3>
+        </p>
+    <div>
+        <h3>
           Result<br>
-          
-      </h3>
- </p>
+        </h3>
+    </p>
+    
  
 </html>
