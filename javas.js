@@ -1,6 +1,6 @@
-<script>
-language="javascript" type="text/javascript">
+window.onload = function(){
     var getXmlBtn = document.querySelector('definition');
+
     getXmlBtn.addEventListener('click', function() 
     {
         var httpRequest = new XMLHttpRequest();
@@ -8,6 +8,7 @@ language="javascript" type="text/javascript">
         httpRequest.onreadystatechange = getXml;
         httpRequest.open('GET', url);
         httpRequest.send();
+
         if (httpRequest.readyState === XMLHttpRequest.DONE) 
         {
               if (httpRequest.status === 200) 
@@ -19,4 +20,6 @@ language="javascript" type="text/javascript">
               {
                   alert('there was a problem with the request');
               }
-</script>
+        }
+        
+    }
